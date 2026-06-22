@@ -9,3 +9,6 @@ PiSubmarineInitTarget(${PISUBMARINE_MODULE_NAME})
 
 PiSubmarineAddDependency("https://github.com/PiSubmarine/Error.Api.git" "")
 target_link_libraries(${PISUBMARINE_MODULE_NAME} INTERFACE PiSubmarine.Error.Api)
+
+PiSubmarineAddDependency("https://github.com/PiSubmarine/Units.git" "")
+target_link_libraries(${PISUBMARINE_MODULE_NAME} INTERFACE PiSubmarine.Units)
