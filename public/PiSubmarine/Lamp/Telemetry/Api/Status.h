@@ -1,10 +1,12 @@
 #pragma once
 
+#include "PiSubmarine/NormalizedFraction.h"
+
 namespace PiSubmarine::Lamp::Telemetry::Api
 {
     struct Status
     {
-        bool IsActive = false;
+        NormalizedFraction Intensity{0};
         bool HasOpenLoadFault = false;
         bool HasOvercurrentFault = false;
         bool HasOvertemperatureShutdownFault = false;
